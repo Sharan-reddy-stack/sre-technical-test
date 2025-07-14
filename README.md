@@ -1,5 +1,3 @@
-# sre-technical-test
-
 # SRE Technical Test - Rails Monitoring Stack
 
 A production-ready monitoring stack for a Rails application with PostgreSQL and Redis, demonstrating enterprise-level SRE practices.
@@ -30,7 +28,7 @@ This project implements a comprehensive observability stack including metrics co
 - Ports 3000, 3001, 9090, 9093 available
 
 ### Deploy the Stack
-```bash
+
 chmod +x provision.sh
 ./provision.sh deploy
 
@@ -170,5 +168,3 @@ Restart policies enabled for service recovery
 Health check timeouts optimized for container environments
 Resource limits and monitoring thresholds based on typical application usage
 Security considerations with proper network isolation and access controls
-
-This implementation demonstrates enterprise-level SRE capabilities suitable for production deployment and operational monitoring requirements.
