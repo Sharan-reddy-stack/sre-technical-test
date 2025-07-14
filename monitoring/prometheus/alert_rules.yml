@@ -1,0 +1,26 @@
+groups:
+  - name: rails_app_alerts
+    rules:
+      - alert: ApplicationDown
+        expr: rails_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Rails application is down"
+
+      - alert: DatabaseDown
+        expr: database_up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Database is down"
+
+      - alert: RedisDown
+        expr: redis_up == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Redis is down"
