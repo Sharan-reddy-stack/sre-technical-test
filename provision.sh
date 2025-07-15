@@ -2,7 +2,6 @@
 
 # SRE Technical Test - Final Complete Working Provisioning Script
 # This script builds a complete Rails application with working monitoring
-# All UI issues have been validated and fixed
 
 set -e
 
